@@ -10,7 +10,7 @@ B = float(input())
 C = float(input())
 D = (B ** 2) - (4 * A * C)
 
-if (D <= 0 or A==0):
+if (D <= 0):
   print('Impossível calcular')
 else :
   D = math.sqrt(D)
