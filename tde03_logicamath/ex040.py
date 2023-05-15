@@ -1,20 +1,15 @@
 # beecrowd | 1036
 # Fórmula de Bhaskara
 # Adaptado por Neilor Tonin, URI  Brasil
-
-# Timelimit: 1
 import math
-
-A = float(input())
-B = float(input())
-C = float(input())
-D = (B ** 2) - (4 * A * C)
-
-if (D <= 0):
+a = float(input())
+b = float(input())
+c = float(input())
+d = b * b -4 * a * c
+if d <= 0 or a == 0:
   print('Impossível calcular')
 else :
-  D = math.sqrt(D)
-  R1 = (-B+D) / (2*A)
-  R2 = (-B-D) / (2*A)
-  print('R1 = %5f' %R1)
-  print('R2 = %5f' %R2)
+  R1 = (-b + math.sqrt(d)) / (2*a)
+  R2 = (-b - math.sqrt(d)) / (2*a)
+  print('R1 = %.5f' %R1)
+  print('R2 = %.5f' %R2)
