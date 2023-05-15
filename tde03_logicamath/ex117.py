@@ -5,8 +5,13 @@
 # Timelimit: 1
 
 cont = int(input())
-c = 0
+dicio = {}
 
 for i in range(cont):
-    c += 1
-    print(c)
+    ev = int(input())
+
+    if not ev in dicio.keys():
+        dicio[ev] = 0
+    dicio[ev] += 1
+
+print(dicio)
